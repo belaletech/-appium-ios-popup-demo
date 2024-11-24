@@ -2,11 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" name="Mobile" parallel="tests">
     <test name="iOSApp 1">
-        <parameter name="version" value="15"/>
+        <parameter name="version" value="18"/>
         <parameter name="platform" value="iOS"/>
-        <parameter name="device" value="iPhone 13"/>
+        <parameter name="device" value="iPhone.*"/>
         <classes>
-            <class name="iOSApp"/>
+<!--            <class name="iOSApp"/>-->
+<!--            <class name="ZupeeIosNative"></class>-->
+<!--            <class name="Zebra"></class>-->
+<!--            <class name="Autozone"></class>-->
+            <class name="LambdaErrorIOs"></class>
+
         </classes>
     </test>
 </suite>

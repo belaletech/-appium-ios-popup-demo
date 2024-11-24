@@ -17,7 +17,7 @@ import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MacChromePopupLT {
+public class MacOsVentura {
     private RemoteWebDriver driver;
 
     @BeforeTest
@@ -29,12 +29,12 @@ public class MacChromePopupLT {
 
         // ChromeOptions for macOS with geolocation preferences
         ChromeOptions browserOptions = new ChromeOptions();
-        browserOptions.setPlatformName("macOS Sonoma"); // macOS version
+        browserOptions.setPlatformName("macOS Ventura"); // macOS version
         browserOptions.setBrowserVersion("latest"); // Latest Chrome version
 
 //        // Chrome-specific geolocation handling
         Map<String, Object> prefs = new HashMap<>();
-        prefs.put("profile.default_content_setting_values.geolocation", 2); // Deny geolocation
+        prefs.put("profile.default_content_setting_values.geolocation", 1); // Deny geolocation
         prefs.put("googlegeolocationaccess.enabled", false); // Disable Google location services
         browserOptions.setExperimentalOption("prefs", prefs);
 
@@ -92,7 +92,7 @@ public class MacChromePopupLT {
 
         // LambdaTest specific options
         HashMap<String, Object> ltOptions = new HashMap<>();
-        ltOptions.put("build", "MacChrome");
+        ltOptions.put("build", "Mac ventura");
         ltOptions.put("browserName", "Chrome");
         ltOptions.put("project", "Belal");
         ltOptions.put("w3c", true); // Ensure W3C compliance

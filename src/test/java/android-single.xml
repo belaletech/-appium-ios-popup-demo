@@ -4,11 +4,13 @@
 
 
     <test name="AndroidAppTest 1">
-        <parameter name="version" value="11"/>
+        <parameter name="version" value="13"/>
         <parameter name="platform" value="android"/>
-        <parameter name="device" value="Galaxy A51"/>
+        <parameter name="device" value="Galaxy S22 Ultra 5G"/>
         <classes>
-            <class name="AndroidApp"/>
+            <class name="thumsupAndroid"/>
+<!--            <class name="PaymentGetway"></class>-->
+<!--            <class name="Autozone"></class>-->
         </classes>
     </test>
 
